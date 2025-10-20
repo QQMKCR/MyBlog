@@ -1,0 +1,36 @@
+baseURL = "https://QQMKCR.github.io/"
+languageCode = "vi-vn"  # Ngôn ngữ tiếng Việt
+title = "Blog của [Tên bạn]"
+theme = "github-style"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  author = "Wuag - Quách Quang Minh "
+  description = "Sinh viên Công nghệ Thông tin đam mê lĩnh vực Phân tích dữ liệu, có kỹ năng sử dụng Python, SQL, Excel, Power BI để xử lý và trực quan hóa dữ liệu."
+  github = "QQMKCR"  # Tên tài khoản GitHub
+  email = "nguyenminhkcr1@gmail.com"  # Email của bạn
+  location = "Việt Nam"  # Vị trí của bạn
+  favicon = "/images/favicon.png"  # Đường dẫn đến favicon
+  avatar = "/images/avatar.png"  # Đường dẫn đến ảnh đại diện
+  userStatusEmoji = "😀"  # Emoji thể hiện trạng thái
+  rss = true
+  lastmod = true
+  enableSearch = true  # Tìm kiếm cục bộ (tùy chọn)
+
+  # Liên kết mạng xã hội hoặc website
+  #[[params.links]]
+  #  title = "LinkedIn"
+  #  href = "https://linkedin.com/in/yourprofile"
+  #  icon = "/images/linkedin-icon.png"
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[outputs]
+  home = ["html", "json"]
+
+[outputFormats.json]
+  mediaType = "application/json"
+  baseName = "index"
+  isPlainText = false

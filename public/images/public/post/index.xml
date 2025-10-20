@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Blog của [Tên bạn]</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on Blog của [Tên bạn]</description>
+    <generator>Hugo</generator>
+    <language>vi-vn</language>
+    <lastBuildDate>Mon, 20 Oct 2025 22:14:46 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giao thức TCP và lập trình Socket cơ bản</title>
+      <link>http://localhost:1313/post/tcp-socket-basics/</link>
+      <pubDate>Mon, 20 Oct 2025 21:42:47 +0700</pubDate>
+      <guid>http://localhost:1313/post/tcp-socket-basics/</guid>
+      <description>&lt;p&gt;Giao thức TCP và lập trình Socket cơ bản&lt;/p&gt;&#xA;&lt;p&gt;Giao thức TCP (Transmission Control Protocol) đảm bảo truyền dữ liệu đáng tin cậy giữa client và server. Java cung cấp các lớp ServerSocket và Socket để làm việc với TCP.&lt;/p&gt;&#xA;&lt;p&gt;Ví dụ: Server TCP cơ bản&lt;/p&gt;&#xA;&lt;p&gt;Tạo một server lắng nghe kết nối trên cổng 12345:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;public%5Cimages%5Cvd2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Giải thích&lt;/p&gt;&#xA;&lt;p&gt;ServerSocket: Lắng nghe kết nối từ client.&lt;/p&gt;&#xA;&lt;p&gt;accept(): Chấp nhận kết nối và trả về một Socket.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Giao thức UDP và DatagramSocket</title>
+      <link>http://localhost:1313/post/udp-datagram-socket/</link>
+      <pubDate>Mon, 20 Oct 2025 21:42:47 +0700</pubDate>
+      <guid>http://localhost:1313/post/udp-datagram-socket/</guid>
+      <description>&lt;p&gt;Giao thức UDP và DatagramSocket&lt;/p&gt;&#xA;&lt;p&gt;UDP (User Datagram Protocol) là giao thức nhanh, không đảm bảo thứ tự dữ liệu. Java sử dụng DatagramSocket và DatagramPacket cho UDP.&lt;/p&gt;&#xA;&lt;p&gt;Ví dụ: Server UDP&lt;/p&gt;&#xA;&lt;p&gt;import java.net.*;&lt;/p&gt;&#xA;&lt;p&gt;public class UDPServer {&#xA;public static void main(String[] args) throws Exception {&#xA;DatagramSocket socket = new DatagramSocket(12345);&#xA;byte[] buffer = new byte[1024];&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;    System.out.println(&amp;quot;UDP Server is listening on port 12345&amp;quot;);&#xA;    DatagramPacket packet = new DatagramPacket(buffer, buffer.length);&#xA;    socket.receive(packet);&#xA;&#xA;    String received = new String(packet.getData(), 0, packet.getLength());&#xA;    System.out.println(&amp;quot;Received: &amp;quot; + received);&#xA;&#xA;    socket.close();&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gửi và nhận đối tượng qua mạng</title>
+      <link>http://localhost:1313/post/object-serialization/</link>
+      <pubDate>Mon, 20 Oct 2025 21:42:47 +0700</pubDate>
+      <guid>http://localhost:1313/post/object-serialization/</guid>
+      <description>&lt;p&gt;Gửi và nhận đối tượng qua mạng&lt;/p&gt;&#xA;&lt;p&gt;Java hỗ trợ gửi/nhận đối tượng qua mạng bằng cơ chế serialization (triển khai Serializable).&lt;/p&gt;&#xA;&lt;p&gt;Ví dụ: Đối tượng Person&lt;/p&gt;&#xA;&lt;p&gt;import java.io.Serializable;&lt;/p&gt;&#xA;&lt;p&gt;public class Person implements Serializable {&#xA;private String name;&#xA;private int age;&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;public Person(String name, int age) {&#xA;    this.name = name;&#xA;    this.age = age;&#xA;}&#xA;&#xA;@Override&#xA;public String toString() {&#xA;    return &amp;quot;Person{name=&#39;&amp;quot; + name + &amp;quot;&#39;, age=&amp;quot; + age + &amp;quot;}&amp;quot;;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lập trình Server-Client đơn giản với TCP</title>
+      <link>http://localhost:1313/post/tcp-server-client/</link>
+      <pubDate>Mon, 20 Oct 2025 21:42:47 +0700</pubDate>
+      <guid>http://localhost:1313/post/tcp-server-client/</guid>
+      <description>&lt;p&gt;Lập trình Server-Client đơn giản với TCP&lt;/p&gt;&#xA;&lt;p&gt;Chúng ta sẽ xây dựng một ứng dụng client-server, trong đó client gửi một thông điệp và server trả lời.&lt;/p&gt;&#xA;&lt;p&gt;Code Server&lt;/p&gt;&#xA;&lt;p&gt;import java.net.&lt;em&gt;;&#xA;import java.io.&lt;/em&gt;;&lt;/p&gt;&#xA;&lt;p&gt;public class TCPServer {&#xA;public static void main(String[] args) throws IOException {&#xA;ServerSocket serverSocket = new ServerSocket(12345);&#xA;System.out.println(&amp;ldquo;Server is listening on port 12345&amp;rdquo;);&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;    Socket clientSocket = serverSocket.accept();&#xA;    BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));&#xA;    PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);&#xA;&#xA;    String message = in.readLine();&#xA;    System.out.println(&amp;quot;Received: &amp;quot; + message);&#xA;    out.println(&amp;quot;Server received: &amp;quot; + message);&#xA;&#xA;    clientSocket.close();&#xA;    serverSocket.close();&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sử dụng Java NIO cho lập trình mạng</title>
+      <link>http://localhost:1313/post/java-nio-networking/</link>
+      <pubDate>Mon, 20 Oct 2025 21:42:47 +0700</pubDate>
+      <guid>http://localhost:1313/post/java-nio-networking/</guid>
+      <description>&lt;p&gt;Sử dụng Java NIO cho lập trình mạng&lt;/p&gt;&#xA;&lt;p&gt;Java NIO (Non-blocking I/O) cho phép xử lý nhiều kết nối hiệu quả hơn so với socket truyền thống.&lt;/p&gt;&#xA;&lt;p&gt;Ví dụ: Server NIO&lt;/p&gt;&#xA;&lt;p&gt;import java.nio.channels.&lt;em&gt;;&#xA;import java.net.&lt;/em&gt;;&#xA;import java.nio.ByteBuffer;&lt;/p&gt;&#xA;&lt;p&gt;public class NIOServer {&#xA;public static void main(String[] args) throws Exception {&#xA;Selector selector = Selector.open();&#xA;ServerSocketChannel serverChannel = ServerSocketChannel.open();&#xA;serverChannel.configureBlocking(false);&#xA;serverChannel.bind(new InetSocketAddress(12345));&#xA;serverChannel.register(selector, SelectionKey.OP_ACCEPT);&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;    while (true) {&#xA;        selector.select();&#xA;        for (SelectionKey key : selector.selectedKeys()) {&#xA;            if (key.isAcceptable()) {&#xA;                SocketChannel client = serverChannel.accept();&#xA;                client.configureBlocking(false);&#xA;                client.register(selector, SelectionKey.OP_READ);&#xA;            } else if (key.isReadable()) {&#xA;                SocketChannel client = (SocketChannel) key.channel();&#xA;                ByteBuffer buffer = ByteBuffer.allocate(1024);&#xA;                client.read(buffer);&#xA;                System.out.println(&amp;quot;Received: &amp;quot; + new String(buffer.array()));&#xA;                client.close();&#xA;            }&#xA;        }&#xA;        selector.selectedKeys().clear();&#xA;    }&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Xây dựng ứng dụng chat đơn giản</title>
+      <link>http://localhost:1313/post/simple-chat-app/</link>
+      <pubDate>Mon, 20 Oct 2025 21:42:47 +0700</pubDate>
+      <guid>http://localhost:1313/post/simple-chat-app/</guid>
+      <description>&lt;p&gt;Xây dựng ứng dụng chat đơn giản&lt;/p&gt;&#xA;&lt;p&gt;Ứng dụng chat cho phép nhiều client gửi tin nhắn đến server, server phát lại cho tất cả client.&lt;/p&gt;&#xA;&lt;p&gt;Code Server&lt;/p&gt;&#xA;&lt;p&gt;import java.net.&lt;em&gt;;&#xA;import java.io.&lt;/em&gt;;&#xA;import java.util.*;&lt;/p&gt;&#xA;&lt;p&gt;public class ChatServer {&#xA;private static Set&lt;!-- raw HTML omitted --&gt; writers = new HashSet&amp;lt;&amp;gt;();&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;public static void main(String[] args) throws Exception {&#xA;    ServerSocket serverSocket = new ServerSocket(12345);&#xA;    while (true) {&#xA;        new Thread(new ClientHandler(serverSocket.accept())).start();&#xA;    }&#xA;}&#xA;&#xA;static class ClientHandler implements Runnable {&#xA;    private Socket socket;&#xA;    private PrintWriter out;&#xA;    private BufferedReader in;&#xA;&#xA;    public ClientHandler(Socket socket) {&#xA;        this.socket = socket;&#xA;    }&#xA;&#xA;    @Override&#xA;    public void run() {&#xA;        try {&#xA;            in = new BufferedReader(new InputStreamReader(socket.getInputStream()));&#xA;            out = new PrintWriter(socket.getOutputStream(), true);&#xA;            writers.add(out);&#xA;&#xA;            String message;&#xA;            while ((message = in.readLine()) != null) {&#xA;                for (PrintWriter writer : writers) {&#xA;                    writer.println(message);&#xA;                }&#xA;            }&#xA;        } catch (IOException e) {&#xA;            e.printStackTrace();&#xA;        } finally {&#xA;            writers.remove(out);&#xA;        }&#xA;    }&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Xử lý lỗi và bảo mật cơ bản trong lập trình mạng</title>
+      <link>http://localhost:1313/post/error-handling-security/</link>
+      <pubDate>Mon, 20 Oct 2025 21:42:47 +0700</pubDate>
+      <guid>http://localhost:1313/post/error-handling-security/</guid>
+      <description>&lt;p&gt;Xử lý lỗi và bảo mật cơ bản trong lập trình mạng&lt;/p&gt;&#xA;&lt;p&gt;Lập trình mạng cần xử lý lỗi và đảm bảo bảo mật để tránh crash và tấn công.&lt;/p&gt;&#xA;&lt;p&gt;Xử lý lỗi&lt;/p&gt;&#xA;&lt;p&gt;IOException: Xử lý khi socket bị đóng hoặc kết nối thất bại.&lt;/p&gt;&#xA;&lt;p&gt;NullPointerException: Kiểm tra dữ liệu trước khi xử lý.&lt;/p&gt;&#xA;&lt;p&gt;try {&#xA;Socket socket = new Socket(&amp;ldquo;localhost&amp;rdquo;, 12345);&#xA;// Xử lý kết nối&#xA;} catch (IOException e) {&#xA;System.err.println(&amp;ldquo;Connection failed: &amp;quot; + e.getMessage());&#xA;}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Xử lý nhiều client với Multithreading</title>
+      <link>http://localhost:1313/post/multithreading-clients/</link>
+      <pubDate>Mon, 20 Oct 2025 21:42:47 +0700</pubDate>
+      <guid>http://localhost:1313/post/multithreading-clients/</guid>
+      <description>&lt;p&gt;Xử lý nhiều client với Multithreading&lt;/p&gt;&#xA;&lt;p&gt;Để server xử lý nhiều client đồng thời, ta sử dụng đa luồng (multithreading) trong Java.&lt;/p&gt;&#xA;&lt;p&gt;Code Server&lt;/p&gt;&#xA;&lt;p&gt;import java.net.&lt;em&gt;;&#xA;import java.io.&lt;/em&gt;;&lt;/p&gt;&#xA;&lt;p&gt;public class TCPServer {&#xA;public static void main(String[] args) throws IOException {&#xA;ServerSocket serverSocket = new ServerSocket(12345);&#xA;System.out.println(&amp;ldquo;Server is listening on port 12345&amp;rdquo;);&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;    while (true) {&#xA;        Socket clientSocket = serverSocket.accept();&#xA;        new Thread(new ClientHandler(clientSocket)).start();&#xA;    }&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;}&lt;/p&gt;&#xA;&lt;p&gt;class ClientHandler implements Runnable {&#xA;private Socket clientSocket;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Giới thiệu về lập trình mạng máy tính với Java</title>
+      <link>http://localhost:1313/post/intro-network-programming/</link>
+      <pubDate>Mon, 20 Oct 2025 21:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/post/intro-network-programming/</guid>
+      <description>&lt;p&gt;Lập trình mạng máy tính là quá trình xây dựng các ứng dụng cho phép các thiết bị giao tiếp qua mạng (LAN, Internet). Java cung cấp gói java.net mạnh mẽ để hỗ trợ lập trình mạng với các giao thức như TCP và UDP.&#xA;Tại sao chọn Java?&lt;/p&gt;&#xA;&lt;p&gt;Độc lập nền tảng: Code Java chạy trên mọi hệ điều hành.&#xA;Thư viện phong phú: Gói java.net và java.nio hỗ trợ socket, URL, và hơn thế nữa.&#xA;Hỗ trợ đa luồng: Dễ dàng xử lý nhiều kết nối đồng thời.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

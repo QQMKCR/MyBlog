@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Blog của [Tên bạn]</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on Blog của [Tên bạn]</description>
+    <generator>Hugo</generator>
+    <language>vi-vn</language>
+    <lastBuildDate>Mon, 20 Oct 2025 22:32:36 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giao thức TCP và lập trình Socket cơ bản</title>
+      <link>http://localhost:1313/post/tcp-socket-basics/</link>
+      <pubDate>Mon, 20 Oct 2025 21:42:47 +0700</pubDate>
+      <guid>http://localhost:1313/post/tcp-socket-basics/</guid>
+      <description>&lt;p&gt;Giao thức TCP và lập trình Socket cơ bản&lt;/p&gt;&#xA;&lt;p&gt;Giao thức TCP (Transmission Control Protocol) đảm bảo truyền dữ liệu đáng tin cậy giữa client và server. Java cung cấp các lớp ServerSocket và Socket để làm việc với TCP.&lt;/p&gt;&#xA;&lt;p&gt;Ví dụ: Server TCP cơ bản&lt;/p&gt;&#xA;&lt;p&gt;Tạo một server lắng nghe kết nối trên cổng 12345:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vd2.png&#34; alt=&#34;vidu2&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Giải thích&lt;/p&gt;&#xA;&lt;p&gt;ServerSocket: Lắng nghe kết nối từ client.&lt;/p&gt;&#xA;&lt;p&gt;accept(): Chấp nhận kết nối và trả về một Socket.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Giao thức UDP và DatagramSocket</title>
+      <link>http://localhost:1313/post/udp-datagram-socket/</link>
+      <pubDate>Mon, 20 Oct 2025 21:42:47 +0700</pubDate>
+      <guid>http://localhost:1313/post/udp-datagram-socket/</guid>
+      <description>&lt;p&gt;Giao thức UDP và DatagramSocket&lt;/p&gt;&#xA;&lt;p&gt;UDP (User Datagram Protocol) là giao thức nhanh, không đảm bảo thứ tự dữ liệu. Java sử dụng DatagramSocket và DatagramPacket cho UDP.&lt;/p&gt;&#xA;&lt;p&gt;Ví dụ: Server UDP&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vd4_1.png&#34; alt=&#34;vidu4.1&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Ví dụ: Client UDP&lt;/p&gt;&#xA;&lt;p&gt;import java.net.*;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vd4_2.png&#34; alt=&#34;vidu4.2&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Lưu ý&lt;/p&gt;&#xA;&lt;p&gt;UDP không đảm bảo dữ liệu đến đúng thứ tự hoặc đến được.&lt;/p&gt;&#xA;&lt;p&gt;Thích hợp cho ứng dụng cần tốc độ cao (như streaming).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gửi và nhận đối tượng qua mạng</title>
+      <link>http://localhost:1313/post/object-serialization/</link>
+      <pubDate>Mon, 20 Oct 2025 21:42:47 +0700</pubDate>
+      <guid>http://localhost:1313/post/object-serialization/</guid>
+      <description>&lt;p&gt;Gửi và nhận đối tượng qua mạng&lt;/p&gt;&#xA;&lt;p&gt;Java hỗ trợ gửi/nhận đối tượng qua mạng bằng cơ chế serialization (triển khai Serializable).&lt;/p&gt;&#xA;&lt;p&gt;Ví dụ: Đối tượng Person&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vd6_1.png&#34; alt=&#34;vidu6.1&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Code Server&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vd6_2.png&#34; alt=&#34;vidu6.2&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Code Client&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vd6_3.png&#34; alt=&#34;vidu6.3&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Lưu ý&lt;/p&gt;&#xA;&lt;p&gt;Class phải implement Serializable.&lt;/p&gt;&#xA;&lt;p&gt;Cẩn thận với phiên bản class khi deserialize.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lập trình Server-Client đơn giản với TCP</title>
+      <link>http://localhost:1313/post/tcp-server-client/</link>
+      <pubDate>Mon, 20 Oct 2025 21:42:47 +0700</pubDate>
+      <guid>http://localhost:1313/post/tcp-server-client/</guid>
+      <description>&lt;p&gt;Lập trình Server-Client đơn giản với TCP&lt;/p&gt;&#xA;&lt;p&gt;Chúng ta sẽ xây dựng một ứng dụng client-server, trong đó client gửi một thông điệp và server trả lời.&lt;/p&gt;&#xA;&lt;p&gt;Code Server&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vd3_1.png&#34; alt=&#34;vidu3.1&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Code Client&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vd3_2.png&#34; alt=&#34;vidu3.2&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cách chạy&lt;/p&gt;&#xA;&lt;p&gt;Chạy TCPServer trước.&lt;/p&gt;&#xA;&lt;p&gt;Chạy TCPClient để gửi thông điệp và nhận phản hồi.&lt;/p&gt;&#xA;&lt;p&gt;Ứng dụng này là nền tảng cho các hệ thống mạng phức tạp hơn.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sử dụng Java NIO cho lập trình mạng</title>
+      <link>http://localhost:1313/post/java-nio-networking/</link>
+      <pubDate>Mon, 20 Oct 2025 21:42:47 +0700</pubDate>
+      <guid>http://localhost:1313/post/java-nio-networking/</guid>
+      <description>&lt;p&gt;Sử dụng Java NIO cho lập trình mạng&lt;/p&gt;&#xA;&lt;p&gt;Java NIO (Non-blocking I/O) cho phép xử lý nhiều kết nối hiệu quả hơn so với socket truyền thống.&lt;/p&gt;&#xA;&lt;p&gt;Ví dụ: Server NIO&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vd7.png&#34; alt=&#34;vidu7&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Giải thích&lt;/p&gt;&#xA;&lt;p&gt;Selector: Quản lý nhiều kênh (channels).&lt;/p&gt;&#xA;&lt;p&gt;ServerSocketChannel: Thay thế ServerSocket cho non-blocking I/O.&lt;/p&gt;&#xA;&lt;p&gt;Hiệu quả hơn khi xử lý hàng nghìn kết nối.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Xây dựng ứng dụng chat đơn giản</title>
+      <link>http://localhost:1313/post/simple-chat-app/</link>
+      <pubDate>Mon, 20 Oct 2025 21:42:47 +0700</pubDate>
+      <guid>http://localhost:1313/post/simple-chat-app/</guid>
+      <description>&lt;p&gt;Xây dựng ứng dụng chat đơn giản&lt;/p&gt;&#xA;&lt;p&gt;Ứng dụng chat cho phép nhiều client gửi tin nhắn đến server, server phát lại cho tất cả client.&lt;/p&gt;&#xA;&lt;p&gt;Code Server&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vd8_1.png&#34; alt=&#34;vidu8.1&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Code Client&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vd8_2.png&#34; alt=&#34;vidu8.2&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cách chạy&lt;/p&gt;&#xA;&lt;p&gt;Chạy ChatServer.&lt;/p&gt;&#xA;&lt;p&gt;Chạy nhiều instance của ChatClient trong các terminal khác.&lt;/p&gt;&#xA;&lt;p&gt;Gõ tin nhắn trong client, server sẽ phát lại cho tất cả client.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Xử lý lỗi và bảo mật cơ bản trong lập trình mạng</title>
+      <link>http://localhost:1313/post/error-handling-security/</link>
+      <pubDate>Mon, 20 Oct 2025 21:42:47 +0700</pubDate>
+      <guid>http://localhost:1313/post/error-handling-security/</guid>
+      <description>&lt;p&gt;Xử lý lỗi và bảo mật cơ bản trong lập trình mạng&lt;/p&gt;&#xA;&lt;p&gt;Lập trình mạng cần xử lý lỗi và đảm bảo bảo mật để tránh crash và tấn công.&lt;/p&gt;&#xA;&lt;p&gt;Xử lý lỗi&lt;/p&gt;&#xA;&lt;p&gt;IOException: Xử lý khi socket bị đóng hoặc kết nối thất bại.&lt;/p&gt;&#xA;&lt;p&gt;NullPointerException: Kiểm tra dữ liệu trước khi xử lý.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vd9_1.png&#34; alt=&#34;vidu9.1&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bảo mật cơ bản&lt;/p&gt;&#xA;&lt;p&gt;Sử dụng SSL/TLS: Dùng SSLSocket thay vì Socket để mã hóa dữ liệu.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Xử lý nhiều client với Multithreading</title>
+      <link>http://localhost:1313/post/multithreading-clients/</link>
+      <pubDate>Mon, 20 Oct 2025 21:42:47 +0700</pubDate>
+      <guid>http://localhost:1313/post/multithreading-clients/</guid>
+      <description>&lt;p&gt;Xử lý nhiều client với Multithreading&lt;/p&gt;&#xA;&lt;p&gt;Để server xử lý nhiều client đồng thời, ta sử dụng đa luồng (multithreading) trong Java.&lt;/p&gt;&#xA;&lt;p&gt;Code Server&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vd5.png&#34; alt=&#34;vidu5&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Giải thích&lt;/p&gt;&#xA;&lt;p&gt;Mỗi client kết nối sẽ được xử lý trong một thread riêng.&lt;/p&gt;&#xA;&lt;p&gt;ClientHandler là một class xử lý từng client, chạy trong thread riêng.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Giới thiệu về lập trình mạng máy tính với Java</title>
+      <link>http://localhost:1313/post/intro-network-programming/</link>
+      <pubDate>Mon, 20 Oct 2025 21:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/post/intro-network-programming/</guid>
+      <description>&lt;p&gt;Lập trình mạng máy tính là quá trình xây dựng các ứng dụng cho phép các thiết bị giao tiếp qua mạng (LAN, Internet). Java cung cấp gói java.net mạnh mẽ để hỗ trợ lập trình mạng với các giao thức như TCP và UDP.&#xA;Tại sao chọn Java?&lt;/p&gt;&#xA;&lt;p&gt;Độc lập nền tảng: Code Java chạy trên mọi hệ điều hành.&#xA;Thư viện phong phú: Gói java.net và java.nio hỗ trợ socket, URL, và hơn thế nữa.&#xA;Hỗ trợ đa luồng: Dễ dàng xử lý nhiều kết nối đồng thời.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

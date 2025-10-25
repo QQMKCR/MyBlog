@@ -1,14 +1,13 @@
 baseURL = "https://QQMKCR.github.io/"
 languageCode = "vi-vn"  # Ngôn ngữ tiếng Việt
-title = "Blog của [Tên bạn]"
+title = "Blog của Wuag"
 theme = "github-style"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
-  author = "Wuag - Quách Quang Minh "
-  description = "Sinh viên Công nghệ Thông tin đam mê lĩnh vực Phân tích dữ liệu, có kỹ năng sử dụng Python, SQL, Excel, Power BI để xử lý và trực quan hóa dữ liệu."
-  github = "QQMKCR"  # Tên tài khoản GitHub
+  author = "Quách Quang Minh"
+  description = "Sinh viên năm cuối - Hiện đang tập trung xây dựng kỹ năng phân tích dữ liệu thông qua các dự án thực tế và công cụ như Python (Pandas, NumPy), SQL, Power BI và Excel. Mục tiêu trở thành Data Analyst chuyên nghiệp, có khả năng chuyển đổi dữ liệu thô thành thông tin chiến lược hỗ trợ ra quyết định.."
   email = "nguyenminhkcr1@gmail.com"  # Email của bạn
   location = "Việt Nam"  # Vị trí của bạn
   favicon = "/images/favicon.png"  # Đường dẫn đến favicon
@@ -17,6 +16,34 @@ pygmentsUseClasses = true
   rss = true
   lastmod = true
   enableSearch = true  # Tìm kiếm cục bộ (tùy chọn)
+
+  showSkills = true
+  skillsTitle = "Kỹ năng"
+
+  [[params.skills]]
+    name = "Python"
+    level = 65
+    icon = "fab fa-python"
+
+  [[params.skills]]
+    name = "SQL"
+    level = 85
+    icon = "fas fa-database"
+
+  [[params.skills]]
+    name = "Power BI"
+    level = 45
+    icon = "fas fa-chart-bar"
+
+  [[params.skills]]
+    name = "Excel"
+    level = 60
+    icon = "fas fa-table"
+
+  [[params.skills]]
+    name = "Git & GitHub"
+    level = 70
+    icon = "fab fa-github"
 
   # Liên kết mạng xã hội hoặc website
   #[[params.links]]
@@ -34,3 +61,5 @@ pygmentsUseClasses = true
   mediaType = "application/json"
   baseName = "index"
   isPlainText = false
+
+

@@ -1,0 +1,72 @@
+/* === SKILLS STYLING === */
+.skills-section {
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.skills-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text-normal);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.35rem;
+}
+
+.skill-item {
+  margin-bottom: 0.75rem;
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.skill-icon {
+  margin-right: 0.5rem;
+  color: #58a6ff;
+  font-size: 1rem;
+}
+
+.skill-name {
+  flex: 1;
+  font-weight: 500;
+  color: var(--text-normal);
+}
+
+.skill-percent {
+  font-weight: 600;
+  color: #58a6ff;
+  min-width: 38px;
+  text-align: right;
+}
+
+.skill-bar {
+  height: 6px;
+  background: #30363d;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #58a6ff, #1f6feb);
+  border-radius: 3px;
+  transition: width 1.2s ease-in-out;
+}
+
+/* Hiệu ứng khi hover */
+.skill-item:hover .skill-progress {
+  transform: scaleX(1.02);
+  transform-origin: left;
+}
+
+/* Dark mode tự động */
+@media (prefers-color-scheme: dark) {
+  .skill-bar {
+    background: #21262d;
+  }
+}

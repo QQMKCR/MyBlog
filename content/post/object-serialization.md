@@ -1,6 +1,6 @@
 +++
 date = '2025-10-20T21:42:47+07:00'
-draft = true
+draft = false
 title = 'Gửi và nhận đối tượng qua mạng'
 +++
 Gửi và nhận đối tượng qua mạng

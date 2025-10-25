@@ -1,6 +1,6 @@
 +++
 date = '2025-10-20T21:42:47+07:00'
-draft = true
+draft = false
 title = 'Xây dựng ứng dụng chat đơn giản'
 +++
 Xây dựng ứng dụng chat đơn giản

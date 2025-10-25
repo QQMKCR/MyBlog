@@ -1,6 +1,11 @@
 {
-  "buildCommand": "npm ci && npm run build",
-  "outputDirectory": "public",
-  "installCommand": "npm ci",
-  "framework": null
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    }
+  ]
 }

@@ -1,4 +1,4 @@
-baseURL = "https://QQMKCR.github.io/"
+
 languageCode = "vi-vn"  # Ngôn ngữ tiếng Việt
 title = "Blog của Wuag"
 theme = "github-style"
